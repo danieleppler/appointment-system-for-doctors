@@ -33,7 +33,7 @@
             android:name=".Activities.Entry.EMail_Verification_Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activities.Entry.Main_Activity"
+            android:name=".Activities.Doctors.Doctor_Main"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Activities.Entry.SignUp_Doctor"
@@ -42,11 +42,10 @@
             android:name=".Activities.Entry.Login_Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activities.Doctors.Doctor_Main"
+            android:name=".Activities.Entry.Main_Activity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

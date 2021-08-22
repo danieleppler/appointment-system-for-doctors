@@ -48,35 +48,42 @@ public class Doctor_Main extends AppCompatActivity {
     TextView ArrivalTime;
     TextView Pat_Name;
 
-
+    int mutable = 1;
     long Time_Left = 0;
 
     private CountDownTimer countDownTimer;
 
-    static final double _APP_TIME = 0.1; // X time for an appointment. modify as you want by MINUTES. By default set to 15 minutes
+    static final double _APP_TIME = 1; // X time for an appointment. modify as you want by MINUTES. By default set to 15 minutes
     //For debug , you can modify this variable to 0.1
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctor_main);
+                super.onCreate(savedInstanceState);
+                setContentView(R.layout.activity_doctor_main);
 
-        //doctor_id= "i:111111111"; //DEBUG
-        doctor_id = getIntent().getStringExtra("doctor_id"); //REAL - TIME
+                //doctor_id = "i:111111111"; //DEBUG
+                doctor_id = getIntent().getStringExtra("doctor_id"); //REAL - TIME
 
-        Time_Rem = (TextView) findViewById(R.id.Time_Rem);
-        pls_ntc =  (TextView) findViewById(R.id.pls_notice);
-        pat_det = (TextView) findViewById(R.id.Patient_det);
-        no_app_doc = (TextView) findViewById(R.id.No_App_Doc);
-        no_app_doc.setVisibility(View.INVISIBLE);
-        no_app_wl = (TextView) findViewById(R.id.No_App_wl);
-        waiting_lst = (ListView) findViewById (R.id.Waiting_List2);
-        Waiting_lst_empty = (TextView) findViewById (R.id.Waiting_list_empty);
-        Waiting_lst_empty.setVisibility(View.INVISIBLE);
-        Pat_Name = (TextView) findViewById(R.id.Pat_Name);
-        ArrivalTime = (TextView) findViewById(R.id.ArrivalTime);
+                Time_Rem = (TextView) findViewById(R.id.Time_Rem);
+                pls_ntc = (TextView) findViewById(R.id.pls_notice);
+                pat_det = (TextView) findViewById(R.id.Patient_det);
+                no_app_doc = (TextView) findViewById(R.id.No_App_Doc);
+                no_app_doc.setVisibility(View.INVISIBLE);
+                no_app_wl = (TextView) findViewById(R.id.No_App_wl);
+                waiting_lst = (ListView) findViewById(R.id.Waiting_List2);
+                Waiting_lst_empty = (TextView) findViewById(R.id.Waiting_list_empty);
+                Waiting_lst_empty.setVisibility(View.INVISIBLE);
+                Pat_Name = (TextView) findViewById(R.id.Pat_Name);
+                ArrivalTime = (TextView) findViewById(R.id.ArrivalTime);
+        if(mutable == 1) {
+                mutable = 0 ;
+                ShowCurrApp();
+            }
+        }
 
-        ShowCurrApp();
+    @Override
+    protected void onPause() {
+        super.onPause();
     }
 
     /**
@@ -178,6 +185,13 @@ public class Doctor_Main extends AppCompatActivity {
                                 }
                             }
                         }
+                        Collections.sort(Patients_Obj, new ArrivelsComperator()); // sorting arrivals comparator
+                        for (ClientPatient patient : Patients_Obj
+                        ) {
+                            Patients.add(patient.TostringWithArrival());
+                        }
+                        ArrayAdapter adapter = new ArrayAdapter<String>(context, R.layout.simple_list_view, R.id.textView, Patients);
+                        waiting_lst.setAdapter(adapter);
                         if(Patients_Obj.size() == 0)
                         {
                             no_app_wl.setVisibility(View.INVISIBLE);
@@ -185,15 +199,6 @@ public class Doctor_Main extends AppCompatActivity {
                             ArrivalTime.setVisibility(View.INVISIBLE);
                             Waiting_lst_empty.setText("Waiting list empty");
                             Pat_Name.setVisibility(View.INVISIBLE);
-                        }
-                        else {
-                            Collections.sort(Patients_Obj, new ArrivelsComperator()); // sorting arrivals comparator
-                            for (ClientPatient patient : Patients_Obj
-                            ) {
-                                Patients.add(patient.TostringWithArrival());
-                            }
-                            ArrayAdapter adapter = new ArrayAdapter<String>(context, R.layout.simple_list_view, R.id.textView, Patients);
-                            waiting_lst.setAdapter(adapter);
                         }
                         startTicking(Time_Left);
                     }

@@ -111,7 +111,7 @@ public class ClientPatient extends Client implements Serializable  {
     }
 
     public String TostringWithcurrPlaceInWl() {
-        return  this.currPlaecInWl + "..............." + this.first_name + " " + this.second_name + " " ;
+        return  this.currPlaecInWl + "............." + this.first_name + " " + this.second_name + " " ;
     }
 
 }

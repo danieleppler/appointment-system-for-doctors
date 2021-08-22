@@ -205,7 +205,7 @@ public class Login_Verification_Activity extends AppCompatActivity {
         startActivity(open_patient_menu);
     }
 
-    /*Activate Institute Menu activity*/
+    /*Activate doctor Menu activity*/
     private void opendoctorMenu_Activity(String doctor_ID) {
         Intent open_doctor_menu = new Intent(this, Doctor_Main.class);
         open_doctor_menu.putExtra("doctor_id", doctor_ID);
