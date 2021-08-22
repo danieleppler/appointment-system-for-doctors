@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appointmentsystemfordoctors">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.AppointmentSystemForDoctors">
+        <activity
+            android:name=".Activities.Patients.Patient_Appointments"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Entry.SignUp_Patient"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Patients.Patient_Main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Entry.Forget_Password_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Entry.SignUp_Main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Entry.Login_Verification_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Entry.EMail_Verification_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Entry.Main_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Entry.SignUp_Doctor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Entry.Login_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Doctors.Doctor_Main"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

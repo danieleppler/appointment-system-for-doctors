@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/drawable/pale_blue_background.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/drawable/round_button.xml" value="0.1453125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_curr_app.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_doctor_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_doctor_show_wl.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_e_mail__varification.xml" value="0.10260416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_forget_password.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_main.xml" value="0.10260416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_main_client_view.xml" value="0.10208333333333333" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_main_register.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_patient_appointments.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_patient_main.xml" value="0.22" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_patient_register.xml" value="0.23980099502487562" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_register_doctors.xml" value="0.14583333333333334" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_register_institute.xml" value="0.3492537313432836" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_show_wl.xml" value="0.14583333333333334" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_signup_doctor.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_signup_main.xml" value="0.11231884057971014" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_signup_patient.xml" value="0.11231884057971014" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/activity_verification.xml" value="0.10260416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/simple_list_view.xml" value="0.1109375" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/simple_list_view2.xml" value="0.14583333333333334" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/Appointmentsystemfordoctors/app/src/main/res/layout/toolbar_entry_activities.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
