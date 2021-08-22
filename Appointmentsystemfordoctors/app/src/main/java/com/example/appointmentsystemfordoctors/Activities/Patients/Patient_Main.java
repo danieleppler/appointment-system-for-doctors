@@ -56,8 +56,8 @@ public class Patient_Main extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        patient_id = "p:111111111";  //DEBUG
-        //patient_id = getIntent().getStringExtra("patient_id");  //REAL Time
+        //patient_id = "p:111111111";  //DEBUG
+        patient_id = getIntent().getStringExtra("patient_id");  //REAL Time
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_main);
 

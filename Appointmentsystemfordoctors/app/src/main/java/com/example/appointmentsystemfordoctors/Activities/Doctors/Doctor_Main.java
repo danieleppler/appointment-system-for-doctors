@@ -61,8 +61,8 @@ public class Doctor_Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_main);
 
-        doctor_id= "i:111111111"; //DEBUG
-        //doctor_id = getIntent().getStringExtra("doctor_id"); //REAL - TIME
+        //doctor_id= "i:111111111"; //DEBUG
+        doctor_id = getIntent().getStringExtra("doctor_id"); //REAL - TIME
 
         Time_Rem = (TextView) findViewById(R.id.Time_Rem);
         pls_ntc =  (TextView) findViewById(R.id.pls_notice);
